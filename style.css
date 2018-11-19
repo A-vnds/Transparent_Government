@@ -1,0 +1,440 @@
+/* BASIC SETUP */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+.ss-row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/* HEADER */
+
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.header-logo {
+    height: 120px;
+}
+
+.header-email {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.header-email a {
+    text-decoration: none;
+    color: #555;
+}
+
+.header-email a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+.header-email ion-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin top: 10px;
+    font-size: 120%;
+}
+
+
+.header-email {
+        display: none;
+    }
+
+.dropdown-menu {
+    padding: 0;
+}
+
+
+/* NAVIGATION BAR */
+
+
+.navigation-wrapper {
+    background-color: #555;
+    color: #fff;
+}
+
+.navigation-wrapper ul {
+    list-style: none;
+}
+
+.navigation-wrapper a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+
+.navigation-wrapper a:hover {
+    background-color: #6a6a6a;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+    .dropdown-menu {
+        padding: 0;
+    }
+
+    .dropdown a {
+            background-color: #555; 
+    }
+
+@media only screen and (min-width: 768px) {
+
+
+    .header-email {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 50px;
+        margin-right: 40px;
+    }
+
+    .header-email a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    .header-email a:hover {
+        text-decoration: none;
+        color: #555;
+    }
+
+    .header-email ion-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin top: 10px;
+        font-size: 120%;
+    }  
+    
+    
+    .navigation-wrapper ul {
+        display: flex;
+  
+    }
+
+    .navigation-wrapper li {
+        flex: 1 1 0;
+  
+    }
+    
+    .dropdown-menu a {
+    background-color: #555; 
+    }
+    
+    .dropdown-menu {
+        padding: 0;
+    }
+    
+    .main-info p {
+    font-size: 100%;
+}
+
+
+    
+
+}
+
+
+
+/* MAIN TEXT */
+
+h2 {
+    font-weight: 100;
+    margin-left: 40px;
+    color: #555;
+}
+
+
+.main-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.main-info p {
+    font-size: 90%;
+    color: #383838;
+    margin-left: 20px;
+    margin-right: 2%;
+    margin-top: 10px;
+    line-height: 1.5em;
+    max-width: 90%;
+    text-align: justify;
+}
+
+
+.container {
+    font-size: 80%;
+}
+
+.contact-form {
+    height: 70vh;
+}
+
+/* TABLE FILTERS */
+
+
+.table-filters {
+    font-size: 80%;
+    background-color: #555;
+    color: #fff;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* TABLE */
+
+table {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 80%;
+    table-layout: auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+th {
+    padding: 5px;
+    background-color: #555;
+    color: #fff;
+    font-weight: 200;
+}
+
+.column1 {
+    width: 40%;
+}
+
+.column2 {
+    width: 10%;
+}
+
+.column3 {
+    width: 10%;
+}
+
+.column4 {
+    width: 20%;
+}
+
+
+.column5 {
+    width: 20%;
+}
+
+
+
+
+table a {
+    color: #555;
+    text-decoration: none;
+}
+
+
+tr,
+td {
+    border: 1px solid #555;
+    padding: 3px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    height: 100px;
+}
+
+.footer p {
+    margin-bottom: 3px;
+}
+
+.footer img {
+    height: 50px;
+}
+
+
+
+/* ACCORDION */
+
+#myButton1,
+#myButton2,
+#myButton3 {
+    font-size: 90%;
+    background-color: #555;
+}
+
+
+.dropdowns-links {
+    margin-top: 5%;
+}
+
+/* ATTENDANCE PAGE */
+
+.text-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.width60 {
+    flex: 2 1 0;
+    min-width: 500px;
+} 
+
+.width40 {
+    margin-right: 10px;
+    margin-left: 40px;
+    flex: 1 1 0;
+}
+
+
+.two-tables-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width50 {
+    width: 50%;
+    flex: 1 1 0;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+/* LOADER */
+
+
+
+.hide_loader{
+display:none;
+}
+
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+.hide_table {
+   display : none;  
+}
+
+
+
+
+/* MISC */
+
+
+.separation-line {
+    border-bottom: 1.5px solid #555;
+}
+
+
+.dropdown-menu {
+    padding: 0;
+}
+
+
+/* SCROLL BUTTON */
+
+
+#myScrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myScrollBtn:hover {
+  background-color: #555;
+}
+
