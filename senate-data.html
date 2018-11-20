@@ -20,7 +20,7 @@
 <body>
       
       
-<div class="ss-row header">
+<div class="ss-row header table-fixed">
 
     <div class="header-wrapper">
 
@@ -39,7 +39,7 @@
       
 <nav class="ss-row navigation-wrapper">
     <ul class='dropdown'>
-        <li><a href='home.html'>Home</a></li>
+        <li><a href='index.html'>Home</a></li>
          <li class="nav-item dropdown dmenu">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
               Congress 113
@@ -107,9 +107,10 @@
                                            
 <div class="spinner" id="loader" v-bind:class="{ hide_loader: hide_loader}"></div> 
 <div class='ss-row table-container'>
-   
-    <table v-bind:class="{hide_table: hide_table}" class="fixed_headers">
-        <thead>
+   <div id="wrap">
+    <table v-bind:class="{hide_table: hide_table}">
+    
+        <thead class="table-fixed">
             <tr>
                 <th class="column1">Name</th>
                 <th class="column2">Party</th>
@@ -118,6 +119,7 @@
                 <th class="column5">Voted with Party %</th>
             </tr>
         </thead>
+       
         <tbody id='senate_table'>
             <tr v-for="value in senators">
                 <td><a v-bind:href="value.url" >{{value.first_name}} {{value.middle_name}} {{value.last_name}}</a></td>
@@ -128,6 +130,9 @@
             </tr>
         </tbody>
     </table> 
+    </div>
+    
+    
    </div> 
 </div>
 

@@ -1,5 +1,4 @@
 
-
 var app = new Vue({
     el: '#vue-app',
     data: {
@@ -22,6 +21,7 @@ var app = new Vue({
     },
 
     methods: {
+        
 
         getData: function (url) {
             fetch(url, {
@@ -88,12 +88,11 @@ var app = new Vue({
 
 
             if ((stateSelector.value == 'All' && (checkDem.checked == false) && (checkRep.checked == false) && (checkInd.checked == false))) {
-                this.resetTableArr()
-                console.log('hi');
+                this.resetTableArr();
             } else {
                 this.filterArray();
             }
-            console.log('hi');
+            
 
         },
 
@@ -132,7 +131,7 @@ var app = new Vue({
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.getElementById("myScrollBtn").style.display = "block";
     } else {
         document.getElementById("myScrollBtn").style.display = "none";
@@ -142,4 +141,11 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+};
+
+
+document.getElementById("wrap").addEventListener("scroll",function(){
+   var translate = "translate(0,"+this.scrollTop+"px)";
+   this.querySelector("thead").style.transform = translate;
+});
+

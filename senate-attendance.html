@@ -28,7 +28,7 @@
 
     <nav class="ss-row navigation-wrapper">
         <ul class='dropdown'>
-            <li><a href='home.html'>Home</a></li>
+            <li><a href='index.html'>Home</a></li>
             <li class="nav-item dropdown dmenu">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                     Congress 113
@@ -77,7 +77,7 @@
 
                 <h4>Senate at a glance</h4>
                 <div class="spinner" id="loader" v-bind:class="{ hide_loader: hide_loader}"></div>
-                <table v-bind:class="{hide_table: hide_table}">
+                <table v-bind:class="{hide_table: hide_table}" id="header-fixed">
                     <thead>
                         <tr>
                             <th>Party</th>

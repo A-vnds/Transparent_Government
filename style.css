@@ -228,7 +228,7 @@ h2 {
 /* TABLE */
 
 table {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 30px;
     font-size: 80%;
     table-layout: auto;
@@ -438,3 +438,15 @@ display:none;
   background-color: #555;
 }
 
+/* TABLE HEADER */
+
+
+#wrap {
+    overflow: auto;
+    height: 1200px;
+}
+
+
+.main-page {
+    min-height: 650px;
+}

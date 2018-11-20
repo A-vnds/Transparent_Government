@@ -20,7 +20,6 @@ var app = new Vue({
     
     created: function () {
         
-        //Page URLs
 
         
         if ((window.location.pathname == "/senate-attendance.html") || (window.location.pathname == "/senate-loyalty.html")) {
@@ -85,7 +84,6 @@ var app = new Vue({
             averPVInde = indeVotPerc / indeLength;
             averAverPVP = ((averPVDemo + averPVRepu + averPVInde) / 3);
 
-            // Convert any falsey values to 0; false, NaN, undefined, 0, " ", null.
 
             averPVDemo = averPVDemo || 0;
             averPVRepu = averPVRepu || 0;
@@ -101,8 +99,7 @@ var app = new Vue({
             });
 
 
-            // Least Loyal: The ones with lowest 'Voted with Party' Percentage
-            // Most Loyal: The ones with the highest 'Voted with Party' Percentage
+           
 
             let leastLoyal = [...app.members].sort(function (a, b) {
                 return parseFloat(a.votes_with_party_pct) - parseFloat(b.votes_with_party_pct);
@@ -122,7 +119,7 @@ var app = new Vue({
             this.mostLoyalArray = this.find10Percent(mostLoyal, "votes_with_party_pct", "des");
 
 
-            // Small Table and Rest of the Statistics
+        
 
             stats = {
                 'Number_of_Republicans': repuLength,
