@@ -22,12 +22,12 @@ var app = new Vue({
         
 
         
-        if ((window.location.pathname == "/senate-attendance.html") || (window.location.pathname == "/senate-loyalty.html")) {
+        if ((window.location.pathname == "/senate-attendance.html") || (window.location.pathname == "/senate-loyalty.html") || (window.location.pathname == "/Transparent_Government/senate-attendance.html") || (window.location.pathname == "/Transparent_Government/senate-loyalty.html")){
             this.getDATA(this.senateURL);
         };
 
 
-        if ((window.location.pathname == "/house-attendance.html") || (window.location.pathname == "/house-loyalty.html")) {
+        if ((window.location.pathname == "/house-attendance.html") || (window.location.pathname == "/house-loyalty.html") || (window.location.pathname == "/Transparent_Government/house-attendance.html") || (window.location.pathname == "/Transparent_Government/house-loyalty.html")     ) {
             this.getDATA(this.houseURL);
         };
         

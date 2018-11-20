@@ -12,10 +12,10 @@ var app = new Vue({
 
     },
     created: function () {
-        if (window.location.pathname == "/senate-data.html") {
+        if ((window.location.pathname == "/senate-data.html") || (window.location.pathname == "/Transparent_Government/senate-data.html")) {
             this.getData(this.senateURL);
         };
-        if (window.location.pathname == "/house-data.html") {
+        if ((window.location.pathname == "/house-data.html") || (window.location.pathname == "/Transparent_Government/house-data.html")) {
             this.getData(this.houseURL);
         };
     },
